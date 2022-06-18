@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B3AC436D285DA95600EB8B93 /* jsondata.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3AC436C285DA95500EB8B93 /* jsondata.swift */; };
 		B3DADF8C285D80D30084646E /* ArtAboveReality_Interface_AppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3DADF8B285D80D30084646E /* ArtAboveReality_Interface_AppApp.swift */; };
 		B3DADF8E285D80D30084646E /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3DADF8D285D80D30084646E /* ContentView.swift */; };
 		B3DADF90285D80D60084646E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B3DADF8F285D80D60084646E /* Assets.xcassets */; };
@@ -14,6 +15,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		B3AC436C285DA95500EB8B93 /* jsondata.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = jsondata.swift; sourceTree = "<group>"; };
 		B3DADF88285D80D30084646E /* ArtAboveReality Interface App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ArtAboveReality Interface App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B3DADF8B285D80D30084646E /* ArtAboveReality_Interface_AppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArtAboveReality_Interface_AppApp.swift; sourceTree = "<group>"; };
 		B3DADF8D285D80D30084646E /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -53,6 +55,7 @@
 			children = (
 				B3DADF8B285D80D30084646E /* ArtAboveReality_Interface_AppApp.swift */,
 				B3DADF8D285D80D30084646E /* ContentView.swift */,
+				B3AC436C285DA95500EB8B93 /* jsondata.swift */,
 				B3DADF8F285D80D60084646E /* Assets.xcassets */,
 				B3DADF91285D80D60084646E /* Preview Content */,
 			);
@@ -138,6 +141,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B3DADF8E285D80D30084646E /* ContentView.swift in Sources */,
+				B3AC436D285DA95600EB8B93 /* jsondata.swift in Sources */,
 				B3DADF8C285D80D30084646E /* ArtAboveReality_Interface_AppApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
