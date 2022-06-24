@@ -7,7 +7,7 @@
 
 import Foundation
 
-func getPost() async throws -> String {
+func getPost() async throws -> NSAttributedString {
     // Each individual post's contents can be grabbed by id, but they all come without it.
     let string = "https://artabovereality.com/wp-json/wp/v2/posts/1854"
     guard let url = URL(string: string) else {
@@ -22,13 +22,8 @@ func getPost() async throws -> String {
     let content = dictionary["content"] as! [String: AnyObject]
     // This is the actual text content, but formatted as a whole html doc
     let raw = content["rendered"] as! String
-    // A condition just in case Wordpress fixes their API and sends a normal string in the response
-    guard let rendered = raw.htmlToAttributedString else {
-        // We don't need to convert Wordpress' goofy response in this case
-        return raw
-    }
-    // A regular String strips the styling away
-    return rendered.string
+    // If we wanted to KEEP the website styling, but with a fallback Attributed string without styling in case they fix their API
+    return raw.htmlToAttributedString ?? NSAttributedString(string: raw)
 }
 
 extension String {
