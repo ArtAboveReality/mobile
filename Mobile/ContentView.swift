@@ -8,8 +8,14 @@
 import SwiftUI
 
 struct ContentView: View {
+    @State var content: AttributedString = "Tap Button to Get a Post"
+    
     var body: some View {
-        Text("Hello, world!")
+        ScrollView {
+            Text(content)
+        }
+        Button("Grab A Post") {
+        }.border(.cyan, width: 1)
             .padding()
     }
 }
