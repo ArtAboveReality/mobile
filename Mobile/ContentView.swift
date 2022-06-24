@@ -15,6 +15,14 @@ struct ContentView: View {
             Text(content)
         }
         Button("Grab A Post") {
+            Task {
+                do {
+                    let post = try await getPost()
+                    content = AttributedString(post)
+                } catch {
+                    content = AttributedString(error.localizedDescription, attributes: AttributeContainer([.foregroundColor: UIColor.red]))
+                }
+            }
         }.border(.cyan, width: 1)
             .padding()
     }
